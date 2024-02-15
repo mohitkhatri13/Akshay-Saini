@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="hello"></div>
+    <div id="reacthello"></div>
+    
+   
+  
+   <!-- these are the scripts which include all react files  (cdn files) -->
+   <!-- this is core react file  -->
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>  
+<!-- this is the react library which is used for dom  operations  -->
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+<script>
+    // <!-- hello world program usign java script   
+ const heading =document.createElement("h1");
+        heading.innerHTML  = "Hello Mohit this is by java script   ";
+        const root1=  document.querySelector(".hello");
+        root1.appendChild(heading);
+
+        // <!-- hello world program usign React   -->
+    const head = React.createElement("h1" ,{} ,"HEllo world from react inside");
+    const root = document.getElementById("reacthello");
+    ReactDOM.render(head, root);
+    
+</script>
+</body>
+</html>
