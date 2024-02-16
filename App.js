@@ -1,24 +1,25 @@
 import React from "react";
-import  ReactDOM  from "react";
+import  ReactDOM  from "react-dom";
 //we use to import react for using react packages
 
 // <!-- hello world program usign java script 
-// const heading =document.createElement("h1");
-//         heading.innerHTML  = "Hello Mohit this is by java script ";
-//         const root1=  document.querySelector(".hello");
-//         root1.appendChild(heading);
+const heading =document.createElement("h1");
+        heading.innerHTML  = "Hello Mohit this is by java script ";
+        const root1=  document.querySelector(".hello");
+
+        root1.appendChild(heading);
 
 
 
 
 
 //         // <!-- hello world program usign React see App.js  -->
-// const head = React.createElement("h1" ,
-// {id:"abc"} ,
-// "Hello world from react inside");
+const head = React.createElement("h1" ,
+{id:"abc"} ,
+"Hello world from react inside");
 
-// const root = document.getElementById("reacthello");
-// ReactDOM.render(head, root);
+const root = document.getElementById("reacthello");
+ReactDOM.render(head, root);
 
 
 
